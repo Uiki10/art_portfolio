@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WIGNESHWARAN — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="site-loader" class="loader">
+    <div class="loader-circle"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo-placeholder.png" alt="logo" id="logo-img" onerror="this.style.display='none'">
+        <span class="name-text">WIGNESHWARAN</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="controls">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+        <button id="menu-toggle" class="menu-btn" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Art that breathes — <span class="accent">Manga • Illustration • Commissions</span></h1>
+        <p class="lead">Welcome — click any artwork to open a larger view. Replace the images in <code>/images</code> to update.</p>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="section-inner">
+        <h2 class="section-title">Gallery</h2>
+        <div id="gallery" class="gallery-grid">
+          <!-- Thumbnails loaded by JS -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lightbox-close" class="lb-close" aria-label="Close">✕</button>
+    <div class="lb-content">
+      <img id="lb-image" src="" alt="Artwork">
+      <div id="lb-caption" class="lb-caption"></div>
+    </div>
+    <button id="lb-prev" class="lb-nav">‹</button>
+    <button id="lb-next" class="lb-nav">›</button>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> WIGNESHWARAN</span>
+      <div class="socials">
+        <a href="#" title="Skeb">Skeb</a>
+        <a href="#" title="Instagram">Instagram</a>
+        <a href="#" title="Twitter/X">Twitter/X</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Configure gallery images (you can edit this array in js/main.js too)
+  </script>
+</body>
+</html>
